@@ -6,8 +6,8 @@ def get_row(num):
 
 def check_numbers(numbers):
     one_to_nine = '123456789'
-    for i in numbers:
-        if i not in one_to_nine or numbers.count(i) != 1:
+    for i in one_to_nine:
+        if i not in numbers or one_to_nine.count(i) != 1:
             return False
     return True
 
